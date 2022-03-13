@@ -1,33 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-//import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+//import "./index.css";
+import App from "./App";
 //import reportWebVitals from './reportWebVitals';
-import Login from './components/login/login'
-import Register from './components/register/register'
-import Supplyer from './components/supplyer/supplyer'
-import {BrowserRouter as Route} from 'react-router-dom';
-import {BrowserRouter as Switch} from 'react-router-dom'
-ReactDOM.render(
-  
-<Switch>
-  <div>
- <Route path='/login'>
-   <Login />
- </Route> 
- {/* <Route path='/register'>
-   <Register />
- </Route>  */}
- {/* <Route path='/supplyer'>
-   <Supplyer />
- </Route> */}
+import Login from "./components/login/login";
+import { Row, Col } from "antd";
 
-   
-    
-{/* <Login /> */}
-</div>
-  </Switch>,
-  document.getElementById('root')
+ReactDOM.render(
+  <>
+    <Row>
+      <Col span={8}></Col>
+      <Col span={8}>
+        <Login />
+      </Col>
+      <Col span={8}></Col>
+    </Row>
+  </>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
